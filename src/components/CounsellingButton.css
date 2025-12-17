@@ -14,8 +14,9 @@
   font-size: 1rem;
   box-shadow: 0 8px 25px rgba(192, 57, 43, 0.5);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 500;
   animation: pulse 2s ease-in-out infinite;
+  pointer-events: auto;
 }
 
 .counselling-help-button:hover {
@@ -81,7 +82,8 @@
   .counselling-help-button {
     bottom: 1rem;
     right: 1rem;
-    padding: 0.8rem 1rem;
+    padding: 0.7rem 0.8rem;
+    z-index: 500;
   }
 
   .help-text {
