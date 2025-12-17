@@ -1,0 +1,380 @@
+.home {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 600px;
+  background-image: url('/images/branding/Home_Background-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  color: var(--color-white);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.hero-subtext {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-btn.primary {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.hero-btn.secondary {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+}
+
+.hero-btn.emergency {
+  background-color: #c0392b;
+  color: var(--color-white);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(244, 208, 63, 0.4);
+}
+
+.hero-btn.primary:hover {
+  background-color: #f1c40f;
+}
+
+.hero-btn.secondary:hover {
+  background-color: #6B5010;
+}
+
+.hero-btn.emergency:hover {
+  background-color: #a83229;
+}
+
+/* Who We Are Section - Baby Blue */
+.who-we-are-section {
+  background-color: var(--color-baby-blue);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.who-we-are-section h2 {
+  color: var(--color-black);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* What We Do Section - With Floating Cards */
+.what-we-do-section {
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--color-black);
+}
+
+.pillars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 850px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.pillar-card-float {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 5px solid var(--color-yellow);
+}
+
+.pillar-card-float:hover {
+  transform: translateY(-8px) translateX(5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.pillar-card-float:nth-child(2) {
+  border-left-color: var(--color-baby-blue);
+}
+
+.pillar-card-float:nth-child(3) {
+  border-left-color: var(--color-brown);
+}
+
+.pillar-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-light-gray);
+  opacity: 0.5;
+  min-width: 60px;
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-content {
+  flex: 1;
+}
+
+.pillar-content h3 {
+  color: var(--color-black);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-content p {
+  color: var(--color-dark-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Featured Sections */
+.featured-sections {
+  background-color: var(--color-light-gray);
+  padding: 4rem 0;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featured-card {
+  background-color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.featured-card h3 {
+  color: var(--color-black);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featured-card p {
+  color: var(--color-dark-gray);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.featured-link {
+  color: var(--color-brown);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.featured-link:hover {
+  color: var(--color-black);
+}
+
+/* What We Do Title Section - Blue */
+.what-we-do-title-section {
+  background-color: var(--color-light-blue);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.what-we-do-title-section h2 {
+  color: var(--color-black);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.what-we-do-title-section p {
+  color: var(--color-black);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.info-banner {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .who-we-are-section h2,
+  .what-we-do-title-section h2 {
+    font-size: 2rem;
+  }
+
+  .who-we-are-section p,
+  .what-we-do-title-section p {
+    font-size: 1rem;
+  }
+
+  .pillars-list {
+    padding: 0 1rem;
+  }
+
+  .pillar-card-float {
+    padding: 1.5rem;
+  }
+
+  .info-banner {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .pillar-card-float {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .pillar-number {
+    font-size: 2rem;
+  }
+
+  .pillar-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-banner {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .featured-card {
+    padding: 1.5rem;
+  }
+
+  .featured-card h3 {
+    font-size: 1.4rem;
+  }
+}
