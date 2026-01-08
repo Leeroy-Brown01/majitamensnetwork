@@ -1,4 +1,16 @@
-
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import CounsellingButton from './components/CounsellingButton.tsx';
+import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Chapters from './pages/Chapters.tsx';
+import Programmes from './pages/Programmes.tsx';
+import Resources from './pages/Resources.tsx';
+import MediaGallery from './pages/MediaGallery.tsx';
+import Donate from './pages/Donate.tsx';
+import Contact from './pages/Contact.tsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
