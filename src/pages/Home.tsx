@@ -82,28 +82,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Featured Sections */}
-      <section className="featured-sections">
-        <div className="container">
-          <div className="featured-grid">
-            <div className="featured-card">
-              <h3>Community Chapters</h3>
-              <p>
-                Local Majita chapters are active where men live, work, worship and socialise.
-              </p>
-              <Link to="/chapters" className="featured-link">→ See where we are</Link>
-            </div>
-
-            <div className="featured-card">
-              <h3>Men's Mental Health</h3>
-              <p>
-                We offer safe circles, confidential conversations, and referrals for counselling.
-              </p>
-              <a href="#counselling" className="featured-link">→ Request Counselling</a>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* What We Do Title Section - Blue */}
       <section className="what-we-do-title-section">
         <div className="container">
@@ -112,10 +90,6 @@ function Home() {
             Through innovative programs and community partnerships, we engage men and boys in conversations 
             about healthy masculinity, gender equality, and the prevention of gender-based violence.
           </p>
-          <div className="info-banner">
-            <img src="/images/branding/info_banner.jpg" alt="Majita Men's Network Information" className="banner-image" />
-            <img src="/images/branding/info_banner_2.jpg" alt="Majita Men's Network Programs" className="banner-image" />
-          </div>
         </div>
       </section>
     </div>

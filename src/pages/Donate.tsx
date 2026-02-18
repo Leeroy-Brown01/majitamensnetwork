@@ -15,12 +15,32 @@ function Donate() {
     message: ''
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [whatsappShowAreaChoice, setWhatsappShowAreaChoice] = useState(false);
+  const [whatsappAreaSelected, setWhatsappAreaSelected] = useState<'dz' | 'hatcliffe' | null>(null);
   const [modal, setModal] = useState<{
     isOpen: boolean;
     title: string;
     message: string;
     type: 'success' | 'error';
   }>({ isOpen: false, title: '', message: '', type: 'success' });
+
+  const WHATSAPP_LINKS = {
+    dz: 'https://chat.whatsapp.com/Hb6L6EfU72u5glneBy619G',
+    hatcliffe: 'https://chat.whatsapp.com/placeholder_hatcliffe', // Dummy link for Hatcliffe
+  };
+
+  const whatsappGroupLink = whatsappAreaSelected ? WHATSAPP_LINKS[whatsappAreaSelected] : '#';
+
+  const handleWhatsAppAreaSelect = (area: 'dz' | 'hatcliffe') => {
+    setWhatsappAreaSelected(area);
+  };
+  const handleJoinWhatsAppClick = () => {
+    if (whatsappAreaSelected) {
+      window.open(whatsappGroupLink, '_blank');
+    } else if (!whatsappShowAreaChoice) {
+      setWhatsappShowAreaChoice(true);
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -244,14 +264,40 @@ function Donate() {
                   Connect with like-minded individuals committed to positive change. Join our WhatsApp 
                   group for updates, discussions, and opportunities to get involved.
                 </p>
-                <a 
-                  href="https://chat.whatsapp.com/Hb6L6EfU72u5glneBy619G" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="whatsapp-btn"
-                >
-                  Join WhatsApp Group
-                </a>
+                {!whatsappShowAreaChoice ? (
+                  <button type="button" className="whatsapp-btn" onClick={handleJoinWhatsAppClick}>
+                    Join WhatsApp Group
+                  </button>
+                ) : !whatsappAreaSelected ? (
+                  <>
+                    <p className="whatsapp-area-label">Where are you from?</p>
+                    <div className="whatsapp-area-buttons">
+                      <button
+                        type="button"
+                        className="whatsapp-area-btn"
+                        onClick={() => handleWhatsAppAreaSelect('dz')}
+                      >
+                        DZ Extension
+                      </button>
+                      <button
+                        type="button"
+                        className="whatsapp-area-btn"
+                        onClick={() => handleWhatsAppAreaSelect('hatcliffe')}
+                      >
+                        Hatcliffe
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <a
+                    href={whatsappGroupLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="whatsapp-btn"
+                  >
+                    Join WhatsApp Group ({whatsappAreaSelected === 'dz' ? 'DZ Extension' : 'Hatcliffe'})
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -279,22 +325,6 @@ function Donate() {
                   <p><strong>Name:</strong> Majita Men's Network</p>
                 </div>
                 <p className="payment-note">Send to this number and send proof of payment to our email</p>
-              </div>
-
-              <div className="payment-card">
-                <h3>💳 PayPal</h3>
-                <div className="payment-details">
-                  <p><strong>Account:</strong> paypal.me/majitazw</p>
-                </div>
-                <a 
-                  href="https://paypal.me/majitazw" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="paypal-btn"
-                >
-                  Donate via PayPal
-                </a>
-                <p className="payment-note">Secure international payments</p>
               </div>
             </div>
             <p className="payment-confirmation">

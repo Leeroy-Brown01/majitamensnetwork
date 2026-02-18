@@ -13,7 +13,7 @@ function About() {
       <section className="about-content">
         <div className="container">
           <div className="about-grid">
-            <div className="about-card">
+            <div className="about-card about-card-vision">
               <h2>Our Vision</h2>
               <p>
                 A world where men and boys are champions of gender equality, actively working to end 
@@ -30,15 +30,6 @@ function About() {
                 violence against women and girls.
               </p>
             </div>
-          </div>
-
-          <div className="about-story">
-            <h2>Who We Are</h2>
-            <p>
-              Majita is a membership-driven organisation built on local chapters that bring men together 
-              for learning, accountability, and collective action. Our approach blends African indigenous 
-              wisdom, evidence-based methodologies, and modern mental health support.
-            </p>
           </div>
 
           <div className="about-values">
@@ -67,32 +58,6 @@ function About() {
               <div className="value-item">
                 <h3>Positive Masculinity</h3>
                 <p>We redefine strength as empathy, service, and self-control</p>
-              </div>
-              <div className="value-item">
-                <h3>Transparency</h3>
-                <p>We uphold good governance and open communication</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="organizational-structure">
-            <h2>How We Are Organised</h2>
-            <div className="structure-grid">
-              <div className="structure-item">
-                <h3>National Board</h3>
-                <p>Professional leaders and elected Chapter Representatives who provide strategic oversight</p>
-              </div>
-              <div className="structure-item">
-                <h3>Management Committee</h3>
-                <p>Selected Board members plus Secretariat staff coordinating operations</p>
-              </div>
-              <div className="structure-item">
-                <h3>Secretariat</h3>
-                <p>Director and programme staff implementing daily activities</p>
-              </div>
-              <div className="structure-item">
-                <h3>Community Chapters</h3>
-                <p>Chairs, Secretaries, Treasurers and members driving local action</p>
               </div>
             </div>
           </div>

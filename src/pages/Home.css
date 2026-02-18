@@ -278,23 +278,6 @@
   margin: 0 auto 2rem;
 }
 
-.info-banner {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-}
-
 @media screen and (max-width: 768px) {
   .hero-section {
     height: 500px;
@@ -336,9 +319,6 @@
     padding: 1.5rem;
   }
 
-  .info-banner {
-    gap: 1rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -386,12 +366,6 @@
 
   .pillar-content h3 {
     font-size: 1.2rem;
-  }
-
-  .info-banner {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
   }
 
   .featured-card {

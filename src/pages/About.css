@@ -61,6 +61,16 @@
   transition: transform 0.3s ease;
 }
 
+.about-card-vision {
+  background-color: #5b9bd5;
+  color: var(--color-white);
+}
+
+.about-card-vision h2,
+.about-card-vision p {
+  color: var(--color-white);
+}
+
 .about-card:hover {
   transform: translateY(-5px);
 }
@@ -78,28 +88,8 @@
   line-height: 1.8;
 }
 
-.about-story {
-  max-width: 900px;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
-
-.about-story h2 {
-  color: var(--color-black);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.about-story p {
-  color: var(--color-dark-gray);
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-}
-
 .about-values {
-  background-color: var(--color-light-gray);
+  background-color: #c4c4c4;
   padding: 3rem;
   border-radius: 10px;
 }
@@ -136,52 +126,6 @@
   line-height: 1.6;
 }
 
-.organizational-structure {
-  margin-top: 4rem;
-  background-color: var(--color-white);
-  padding: 3rem;
-  border-radius: 10px;
-}
-
-.organizational-structure h2 {
-  color: var(--color-black);
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.structure-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.structure-item {
-  background-color: var(--color-baby-blue);
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.structure-item:hover {
-  transform: translateY(-5px);
-}
-
-.structure-item h3 {
-  color: var(--color-black);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.structure-item p {
-  color: var(--color-black);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 @media screen and (max-width: 768px) {
   .about-hero h1 {
     font-size: 2.5rem;
@@ -195,19 +139,15 @@
     padding: 2rem;
   }
 
-  .about-story h2,
-  .about-values h2,
-  .organizational-structure h2 {
+  .about-values h2 {
     font-size: 2rem;
   }
 
-  .values-grid,
-  .structure-grid {
+  .values-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-values,
-  .organizational-structure {
+  .about-values {
     padding: 2rem 1.5rem;
   }
 }
@@ -237,22 +177,15 @@
     font-size: 1.5rem;
   }
 
-  .about-story h2,
-  .about-values h2,
-  .organizational-structure h2 {
+  .about-values h2 {
     font-size: 1.6rem;
   }
 
-  .about-story p,
   .about-card p {
     font-size: 1rem;
   }
 
   .value-item {
     padding: 1rem;
-  }
-
-  .structure-item {
-    padding: 1.5rem;
   }
 }

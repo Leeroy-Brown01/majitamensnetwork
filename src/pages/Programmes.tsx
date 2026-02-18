@@ -1,4 +1,4 @@
-import { FaUsers, FaHandshake, FaBullhorn, FaChalkboardTeacher, FaBrain } from 'react-icons/fa';
+import { FaUsers, FaHandshake, FaBullhorn, FaChalkboardTeacher, FaBrain, FaBuilding } from 'react-icons/fa';
 import './Programmes.css';
 
 function Programmes() {
@@ -130,6 +130,28 @@ function Programmes() {
               </ul>
               <p className="programme-note">
                 Visit our Resources page for published research and reports.
+              </p>
+            </div>
+
+            <div className="programme-card">
+              <div className="programme-icon">
+                <FaBuilding />
+              </div>
+              <h3>Engaging Companies and Cooperates</h3>
+              <p>
+                We partner with businesses and cooperatives to embed positive masculinity, gender equality, 
+                and GBV prevention in the workplace. Our corporate engagement includes:
+              </p>
+              <ul>
+                <li>Workplace policies and training</li>
+                <li>Men as allies programmes</li>
+                <li>Leadership and culture change</li>
+                <li>Employee wellness and mental health</li>
+                <li>Community investment alignment</li>
+                <li>CSR and sustainability linkages</li>
+              </ul>
+              <p className="programme-note">
+                Help your organisation become a champion for gender equality and safe workplaces.
               </p>
             </div>
           </div>
