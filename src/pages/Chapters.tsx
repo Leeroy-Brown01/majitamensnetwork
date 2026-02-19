@@ -55,7 +55,7 @@ function Chapters() {
           <div className="chapters-intro">
             <h2>How Chapters Work</h2>
             <p>
-              Chapters are the grassroots structure of Majita. Paid-up members meet regularly for:
+              <b>Click the Buttons</b>: Chapters are the grassroots structure of Majita. Paid-up members meet regularly for:
             </p>
             <div className="chapter-activities-buttons">
               {ACTIVITY_KEYS.map((key) => (

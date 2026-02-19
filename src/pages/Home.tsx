@@ -1,4 +1,3 @@
-import { FaHandsHelping, FaUsers, FaShieldAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -22,74 +21,24 @@ function Home() {
         </div>
       </section>
 
-      {/* Who We Are Section - Baby Blue */}
-      <section className="who-we-are-section">
-        <div className="container">
-          <h2>WHO WE ARE</h2>
-          <p>
-            Majita is a national network of men and boys committed to transforming harmful gender norms, 
-            strengthening fatherhood, and ending violence in homes and communities. We work through community 
-            chapters, mentorship programmes, dialogues, and safe spaces that support men's mental health and wellbeing.
-          </p>
-        </div>
-      </section>
-
-      {/* What We Do Section - White with Icons */}
-      {/* What We Do Section - White with Icons */}
-      <section className="what-we-do-section">
-        <div className="container">
-          <h2 className="section-title">OUR PILLARS</h2>
-          <div className="pillars-list">
-            <div className="pillar-card-float">
-              <div className="pillar-number">01</div>
-              <div className="pillar-icon">
-                <FaHandsHelping />
-              </div>
-              <div className="pillar-content">
-                <h3>Mentorship</h3>
-                <p>
-                  Guiding boys and young men into responsible, respectful manhood.
-                </p>
-              </div>
-            </div>
-
-            <div className="pillar-card-float">
-              <div className="pillar-number">02</div>
-              <div className="pillar-icon">
-                <FaUsers />
-              </div>
-              <div className="pillar-content">
-                <h3>Positive Masculinity</h3>
-                <p>
-                  Redefining strength as empathy, accountability, dignity, self-control, and service.
-                </p>
-              </div>
-            </div>
-
-            <div className="pillar-card-float">
-              <div className="pillar-number">03</div>
-              <div className="pillar-icon">
-                <FaShieldAlt />
-              </div>
-              <div className="pillar-content">
-                <h3>Ending GBV</h3>
-                <p>
-                  Mobilising men as allies to prevent violence and promote safety in homes and communities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We Do Title Section - Blue */}
-      <section className="what-we-do-title-section">
-        <div className="container">
-          <h2>WHAT WE DO</h2>
-          <p>
-            Through innovative programs and community partnerships, we engage men and boys in conversations 
-            about healthy masculinity, gender equality, and the prevention of gender-based violence.
-          </p>
+      {/* Who We Are & What We Do - Side by Side */}
+      <section className="who-what-aside">
+        <div className="container who-what-container">
+          <aside className="who-what-card who-what-left">
+            <h2>WHO WE ARE</h2>
+            <p>
+              Majita is a national network of men and boys committed to transforming harmful gender norms, 
+              strengthening fatherhood, and ending violence in homes and communities. We work through community 
+              chapters, mentorship programmes, dialogues, and safe spaces that support men's mental health and wellbeing.
+            </p>
+          </aside>
+          <aside className="who-what-card who-what-right">
+            <h2>WHAT WE DO</h2>
+            <p>
+              Through innovative programs and community partnerships, we engage men and boys in conversations 
+              about healthy masculinity, gender equality, and the prevention of gender-based violence.
+            </p>
+          </aside>
         </div>
       </section>
     </div>

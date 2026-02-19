@@ -49,7 +49,7 @@ function Programmes() {
               <div className="programme-icon">
                 <FaChalkboardTeacher />
               </div>
-              <h3>School Mentorship Programme</h3>
+              <h3>School-based Mentorship Programme</h3>
               <p>
                 We work with secondary schools to mentor adolescent boys through weekly sessions. 
                 Our mentors guide young men on:
@@ -137,7 +137,7 @@ function Programmes() {
               <div className="programme-icon">
                 <FaBuilding />
               </div>
-              <h3>Engaging Companies and Cooperates</h3>
+              <h3>Cooperate Engagement and Partnerships</h3>
               <p>
                 We partner with businesses and cooperatives to embed positive masculinity, gender equality, 
                 and GBV prevention in the workplace. Our corporate engagement includes:

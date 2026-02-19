@@ -107,175 +107,39 @@
   background-color: #a83229;
 }
 
-/* Who We Are Section - Baby Blue */
-.who-we-are-section {
+/* Who We Are & What We Do - Side by Side (Aside) */
+.who-what-aside {
+  padding: 4rem 2rem;
   background-color: var(--color-baby-blue);
-  padding: 4rem 0;
-  text-align: center;
 }
 
-.who-we-are-section h2 {
-  color: var(--color-black);
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-/* What We Do Section - With Floating Cards */
-.what-we-do-section {
-  background-color: #f5f5f5;
-  padding: 5rem 0;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: var(--color-black);
-}
-
-.pillars-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 850px;
-  margin: 2rem auto 0;
-  padding: 0 1rem;
-}
-
-.pillar-card-float {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-left: 5px solid var(--color-yellow);
-}
-
-.pillar-card-float:hover {
-  transform: translateY(-8px) translateX(5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
-}
-
-.pillar-card-float:nth-child(2) {
-  border-left-color: var(--color-baby-blue);
-}
-
-.pillar-card-float:nth-child(3) {
-  border-left-color: var(--color-brown);
-}
-
-.pillar-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--color-light-gray);
-  opacity: 0.5;
-  min-width: 60px;
-}
-
-.pillar-icon {
-  font-size: 2.5rem;
-  color: var(--color-black);
-  min-width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pillar-content {
-  flex: 1;
-}
-
-.pillar-content h3 {
-  color: var(--color-black);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.pillar-content p {
-  color: var(--color-dark-gray);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Featured Sections */
-.featured-sections {
-  background-color: var(--color-light-gray);
-  padding: 4rem 0;
-}
-
-.featured-grid {
+.who-what-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.featured-card {
-  background-color: var(--color-white);
-  padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.who-what-card {
+  padding: 0;
 }
 
-.featured-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.featured-card h3 {
+.who-what-card h2 {
   color: var(--color-black);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
 }
 
-.featured-card p {
-  color: var(--color-dark-gray);
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.featured-link {
-  color: var(--color-brown);
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.featured-link:hover {
+.who-what-card p {
   color: var(--color-black);
-}
-
-/* What We Do Title Section - Blue */
-.what-we-do-title-section {
-  background-color: var(--color-light-blue);
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.what-we-do-title-section h2 {
-  color: var(--color-black);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.what-we-do-title-section p {
-  color: var(--color-black);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto 2rem;
+  margin: 0;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -294,31 +158,13 @@
     word-spacing: 0.05rem;
   }
 
-  .who-we-are-section {
-    padding: 3rem 1rem;
-    margin-top: 1rem;
-    position: relative;
-    z-index: 1;
+  .who-what-container {
+    grid-template-columns: 1fr;
   }
 
-  .who-we-are-section h2,
-  .what-we-do-title-section h2 {
-    font-size: 2rem;
+  .who-what-card h2 {
+    font-size: 1.75rem;
   }
-
-  .who-we-are-section p,
-  .what-we-do-title-section p {
-    font-size: 1rem;
-  }
-
-  .pillars-list {
-    padding: 0 1rem;
-  }
-
-  .pillar-card-float {
-    padding: 1.5rem;
-  }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -354,44 +200,15 @@
     white-space: nowrap;
   }
 
-  .pillar-card-float {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
+  .who-what-aside {
+    padding: 2.5rem 1rem;
   }
 
-  .pillar-number {
-    font-size: 2rem;
+  .who-what-card h2 {
+    font-size: 1.5rem;
   }
 
-  .pillar-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .featured-card {
-    padding: 1.5rem;
-  }
-
-  .featured-card h3 {
-    font-size: 1.4rem;
-  }
-
-  .who-we-are-section {
-    padding: 3rem 1rem;
-    margin-top: 1.5rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .who-we-are-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    word-spacing: 0.1rem;
-  }
-
-  .who-we-are-section p {
+  .who-what-card p {
     font-size: 0.95rem;
-    padding: 0 0.5rem;
-    line-height: 1.6;
   }
 }

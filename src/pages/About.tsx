@@ -36,28 +36,24 @@ function About() {
             <h2>Our Core Values</h2>
             <div className="values-grid">
               <div className="value-item">
-                <h3>Respect and Dignity</h3>
-                <p>We honor the dignity and worth of every individual</p>
+                <h3>1. Human Dignity and Respect</h3>
+                <p>We uphold the inherent dignity, worth, and voice of every person in all our actions and relationships.</p>
               </div>
               <div className="value-item">
-                <h3>Non-Violence</h3>
-                <p>We commit to peaceful resolution and reject all forms of violence</p>
+                <h3>2. Peace and Non-Violence</h3>
+                <p>We promote peaceful, respectful relationships and actively reject all forms of violence, abuse, and harmful practices.</p>
               </div>
               <div className="value-item">
-                <h3>Accountability</h3>
-                <p>We take responsibility for our actions and their impact</p>
+                <h3>3. Integrity and Accountability</h3>
+                <p>We act with honesty, take responsibility for our actions, and remain accountable to the communities we serve.</p>
               </div>
               <div className="value-item">
-                <h3>Gender Equality</h3>
-                <p>We actively promote justice and equality for all genders</p>
+                <h3>4. Gender Justice and Equality</h3>
+                <p>We champion fairness, equal rights, and opportunities for all genders, and work to transform harmful norms and systems.</p>
               </div>
               <div className="value-item">
-                <h3>Community Participation</h3>
-                <p>We believe in collective action and grassroots engagement</p>
-              </div>
-              <div className="value-item">
-                <h3>Positive Masculinity</h3>
-                <p>We redefine strength as empathy, service, and self-control</p>
+                <h3>5. Positive Masculinity and Partnership</h3>
+                <p>We engage men and boys as responsible partners and allies in advancing gender equality and ending discrimination.</p>
               </div>
             </div>
           </div>
