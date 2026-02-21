@@ -133,6 +133,9 @@
 }
 
 .download-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   background-color: var(--color-black);
   color: var(--color-baby-blue);
   border: none;
@@ -143,6 +146,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .download-btn:hover {

@@ -32,6 +32,16 @@ function Resources() {
             </p>
             <div className="resources-grid">
               <div className="resource-card">
+                <h3>MAJITA</h3>
+                <p>
+                  Majita Men's Network overview and information. Download our MAJITA PDF for details 
+                  about our mission, programmes, and how to get involved.
+                </p>
+                <a href="/documents/MAJITA-PDF.pdf" download className="download-btn" target="_blank" rel="noopener noreferrer">
+                  Download PDF
+                </a>
+              </div>
+              <div className="resource-card">
                 <h3>Masculinity & Gender Norms in Zimbabwe (2024)</h3>
                 <p>
                   A comprehensive study examining traditional and evolving masculinity norms across 
