@@ -3,10 +3,31 @@
 }
 
 .donate-hero {
+  position: relative;
+  background-image: url('/images/branding/donate_hero_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--color-black);
   color: var(--color-white);
   padding: 4rem 0;
   text-align: center;
+}
+
+.donate-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.donate-hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .donate-hero h1 {
