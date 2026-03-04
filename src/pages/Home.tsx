@@ -16,7 +16,7 @@ function Home() {
           <div className="hero-buttons">
             <Link to="/chapters" className="hero-btn primary">Join a Chapter</Link>
             <Link to="/donate" className="hero-btn secondary">Support the Work</Link>
-            <a href="#counselling" className="hero-btn emergency">Need Counselling? Get Help Now</a>
+            <Link to="/contact" className="hero-btn emergency">Need Counselling? Get Help Now</Link>
           </div>
         </div>
       </section>
